@@ -1,0 +1,125 @@
+:root {
+  --blue: #0d6efd;
+  --bg: #020617;
+  --card: #0b1120;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: #f8fafc;
+  line-height: 1.5;
+}
+
+/* links */
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* header / nav */
+header {
+  position: sticky;
+  top: 0;
+  background: #020617dd;
+  padding: 8px 16px;
+  border-bottom: 1px solid #1f2937;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  font-size: 14px;
+}
+.logo {
+  font-weight: 600;
+}
+.nav-links a {
+  margin-left: 12px;
+  color: #e5e7eb;
+}
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* layout */
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 16px;
+}
+section {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--card);
+}
+h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--blue);
+}
+.small {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* pills & rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 6px;
+}
+.pill {
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid #334155;
+}
+
+/* lists */
+ul {
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+/* social */
+.social a {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 16px 0;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .nav-links a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
